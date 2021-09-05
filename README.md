@@ -9,7 +9,7 @@ renv::activate()
 
 ## Setup Bioconductor
 
-````r
+```r
 install("BiocManager")
 BiocManager::install()
 ```
