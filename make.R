@@ -1,24 +1,3 @@
-# rproj
-Templates for research projects in R
-
-## Usage
-
-```bash
-Rscript path/to/make.R path/to/project_directory
-
-# or bash profile
-make_rproj() {
-  Rscript path/to/make.R "$1"
-}
-```
-
-```bash
-make_rproj path/to/project_directory
-```
-
-## Script
-
-```R
 #!/usr/bin/env Rscript
 args <- commandArgs(trailingOnly=TRUE)
 if (length(args) < 1) stop("Must provide a project path.")
@@ -55,4 +34,3 @@ BiocManager::install()
 
 # Install tidyverse
 install.packages("tidyverse")
-```
